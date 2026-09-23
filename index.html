@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Materi Sosiologi Politik." />
+  <title>Mata Kuliah Sosiologi Politik — Defenisi, Ruang Lingkup, Sejarah & Perkembangan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .comte { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Auguste%20Comte.jpg?width=200'); }
+    .marx { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Karl%20Marx%2C%201875.jpg?width=200'); }
+    .weber { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Max%20Weber%201894.jpg?width=200'); }
+    .lipset { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Seymour%20Martin%20Lipset.jpg?width=200'); }
+    .mills { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/C.%20Wright%20Mills.jpg?width=200'); }
+    .foucault { background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Foucault%201974.jpg?width=200'); }
+    .era-detail { display: none; margin: 28px 0 8px 205px; padding: 28px 30px; background: #e9eee8; border-left: 3px solid var(--coral); }
+    .era-detail.active { display: block; animation: detailIn .3s ease both; }
+    .era-detail h3 { margin: 7px 0 12px; font: 26px 'Playfair Display', serif; }
+    .era-detail p { max-width: 780px; color: var(--muted); margin-bottom: 16px; }
+    .era-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 30px; }
+    .era-detail-grid strong { display: block; margin-bottom: 4px; font: 10px 'DM Mono', monospace; letter-spacing: .08em; color: var(--coral); }
+    .era-detail-grid p { margin: 0; font-size: 13px; }
+    .application-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 26px; margin: 22px 0 26px; }
+    .application-point { border-top: 1px solid #52645b; padding-top: 10px; }
+    .application-point strong { display: block; color: var(--yellow); font: 10px 'DM Mono', monospace; letter-spacing: .08em; margin-bottom: 4px; }
+    .application-point span { color: #aebbb3; font-size: 12px; line-height: 1.5; }
+    .course-group { margin-top: 14px; }
+    .course-title { display: flex; align-items: flex-start; gap: 10px; padding: 12px; color: var(--ink); background: #d7e2d6; border-left: 2px solid var(--coral); text-decoration: none; font-weight: 700; line-height: 1.35; }
+    .course-title svg { width: 15px; flex: none; margin-top: 1px; }
+    .course-title small { display: block; margin-bottom: 3px; color: var(--coral); font: 9px 'DM Mono', monospace; letter-spacing: .1em; }
+    .course-links { display: grid; gap: 2px; margin: 6px 0 0 27px; padding-left: 12px; border-left: 1px solid #bdcbbd; }
+    .course-links a { padding: 6px 8px; color: #718078; text-decoration: none; font-size: 12px; }
+    .course-links a:hover, .course-links a.active { color: var(--ink); }
+    .definition-section { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 44px 0 48px; margin-bottom: 72px; }
+    .definition-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8%; align-items: start; margin-bottom: 30px; }
+    .definition-intro h2 { font-size: 38px; margin: 8px 0 0; }
+    .definition-intro p { color: var(--muted); line-height: 1.75; margin: 0; }
+    .scope-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .scope-item { background: var(--paper); padding: 18px 19px; min-height: 125px; }
+    .scope-item:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
+    .scope-item strong { display: block; color: var(--coral); font: 10px 'DM Mono', monospace; letter-spacing: .08em; margin-bottom: 8px; }
+    .scope-item p { color: var(--muted); font-size: 12px; margin: 0; line-height: 1.6; }
+    .expert-definitions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 28px 0 34px; }
+    .expert-definition { background: #edf1eb; border-left: 3px solid var(--coral); padding: 17px 18px; }
+    .expert-definition h3 { margin: 0 0 7px; font: 18px 'Playfair Display', serif; }
+    .expert-definition p { color: var(--muted); font-size: 12px; line-height: 1.65; margin: 0; }
+    .expert-definition .expert-number { color: var(--coral); font: 10px 'DM Mono', monospace; letter-spacing: .08em; margin-bottom: 7px; }
+    .scope-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin: 12px 0 18px; }
+    .scope-heading h3 { margin: 0; font: 27px 'Playfair Display', serif; }
+    .scope-heading p { max-width: 430px; color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0; }
+    @keyframes detailIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 650px) { .era-detail { margin: 24px 0 8px; padding: 22px 18px; } .era-detail-grid, .application-grid, .scope-grid, .expert-definitions { grid-template-columns: 1fr; } .scope-item:last-child { grid-column: auto; width: auto; } .definition-section { margin-bottom: 50px; padding: 34px 0 38px; } .definition-intro { grid-template-columns: 1fr; gap: 18px; } .definition-intro h2 { font-size: 32px; } }
+    :root { --paper: #fefefe; }
+    body { background: #eae5e5; }
+    [id] { scroll-margin-top: 100px; }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top" aria-label="Mata Kuliah Sosiologi Politik beranda">
+        <span class="brand-mark">SP</span>
+        <span>Mata Kuliah<br /><strong>Sosiologi Politik</strong></span>
+      </a>
+      <div class="sidebar-divider"></div>
+      <p class="eyebrow">Materi kuliah</p>
+      <nav class="side-nav" aria-label="Navigasi materi">
+        <div class="course-group">
+          <div class="course-title"><i data-lucide="book-marked"></i><span><small>BAGIAN 1</small>Definisi dan Ruang Lingkup Sosiologi Politik</span></div>
+          <div class="course-links">
+            <a class="active" href="#top">Ikhtisar</a>
+            <a href="#definisi-ahli">Definisi Para Ahli</a>
+            <a href="#ruang-lingkup">Ruang lingkup</a>
+          </div>
+        </div>
+        <div class="course-group">
+          <div class="course-title"><i data-lucide="book-open"></i><span><small>BAGIAN 2</small>Sejarah dan Perkembangan Sosiologi Politik</span></div>
+          <div class="course-links">
+            <a href="#timeline">Lintasan sejarah</a>
+            <a href="#tokoh">Tokoh kunci</a>
+            <a href="#penerapan">Penerapan</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main id="top">
+      <header class="topbar">
+        <div class="breadcrumb"><span>AKADEMIK</span><i data-lucide="chevron-right"></i><strong>SOSIOLOGI POLITIK</strong></div>
+        <div class="top-actions">
+          <button class="icon-btn" title="Cari materi" aria-label="Cari materi" data-focus-search><i data-lucide="search"></i></button>
+          <button class="icon-btn" title="Notifikasi" aria-label="Notifikasi"><i data-lucide="bell"></i><span class="notification-dot"></span></button>
+          <div class="avatar">MS</div>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="hero-section" data-progress-section="ikhtisar">
+          <div class="hero-copy">
+            <h1>Definisi dan Ruang Lingkup <em>Sosiologi Politik.</em></h1>
+            <p class="hero-lead">Sosiologi politik adalah cabang ilmu yang mempelajari hubungan timbal balik antara masyarakat dan kekuasaan politik. Kajian ini melihat bagaimana struktur sosial membentuk negara, institusi, perilaku politik, dan distribusi kekuasaan; sekaligus bagaimana keputusan politik mengubah kehidupan masyarakat.</p>
+            <div class="hero-meta"><span><i data-lucide="bookmark"></i> Materi inti</span></div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-image"></div>
+            <div class="image-caption"><span>01</span><span>“Kekuasaan bukan<br />hanya milik negara.”</span></div>
+          </div>
+        </section>
+
+        <section class="definition-section" id="definisi" data-progress-section="definisi">
+          <div class="definition-intro" id="definisi-ahli"><div><p class="kicker">DEFINISI SOSIOLOGI POLITIK</p><h2>Sosiologi Politik menurut<br /><em>para ahli.</em></h2></div><p>Sosiologi politik adalah cabang ilmu yang mempelajari hubungan timbal balik antara struktur sosial dan proses politik dalam masyarakat.</p></div>
+          <div class="expert-definitions">
+            <article class="expert-definition"><div class="expert-number">01 / FILSAFAT KLASIK</div><h3>Max Weber</h3><p>Studi tentang kekuasaan dalam hubungan sosial, yang mencakup bagaimana kekuasaan digunakan untuk memengaruhi tindakan manusia dalam berbagai skala.</p></article>
+            <article class="expert-definition"><div class="expert-number">02 / DISTRIBUSI KEKUASAAN</div><h3>Harold D. Lasswell</h3><p>Ilmu mengenai kekuasaan, pemerintahan, otoritas, dan komando di semua level masyarakat, baik tingkat lokal, nasional, maupun internasional.</p></article>
+            <article class="expert-definition"><div class="expert-number">03 / SISTEM SOSIAL POLITIK</div><h3>Michael Rush dan Philip Althoff</h3><p>Proses hubungan antara masyarakat dan politik, hubungan antara struktur-struktur sosial, serta hubungan antara tingkah laku sosial dan politik.</p></article>
+            <article class="expert-definition"><div class="expert-number">04 / KONSEP SOSIAL</div><h3>Anthony M. Orum</h3><p>Ilmu yang mempelajari kondisi-kondisi sosial dari politik, yaitu bagaimana politik dibentuk serta membentuk kejadian lain di dalam masyarakat.</p></article>
+            <article class="expert-definition"><div class="expert-number">05 / KEHIDUPAN BERNEGARA</div><h3>Tom Bottomore</h3><p>Kajian mengenai demokrasi, kelas sosial, gerakan sosial, partai politik, aksi politik, perubahan sosial dan konflik, negara, nasionalisme, hingga politik global.</p></article>
+          </div>
+          <div class="scope-heading" id="ruang-lingkup"><h3>Ruang Lingkup Sosiologi Politik</h3><p>Ruang lingkup sosiologi politik mencakup hubungan negara dan masyarakat, distribusi kekuasaan, budaya politik, gerakan sosial, serta perilaku politik.</p></div>
+          <div class="scope-grid">
+            <div class="scope-item"><strong>01 / NEGARA & MASYARAKAT</strong><p>Menganalisis hakikat negara dan pengaruh struktur sosial terhadap pemerintahan, termasuk kondisi sosial yang membentuk kebijakan publik serta program pemerintah.</p></div>
+            <div class="scope-item"><strong>02 / KEKUASAAN & LEGITIMASI</strong><p>Mempelajari cara kekuasaan dan wewenang diperoleh, dipertahankan, serta dilegitimasi dalam tatanan sosial, termasuk distribusinya di antara berbagai kelas.</p></div>
+            <div class="scope-item"><strong>03 / BUDAYA POLITIK & SOSIALISASI</strong><p>Mengkaji proses individu dan kelompok mempelajari nilai, sikap, serta keyakinan politik, sekaligus orientasi warga terhadap sistem politik.</p></div>
+            <div class="scope-item"><strong>04 / GERAKAN SOSIAL & AKSI KOLEKTIF</strong><p>Meneliti sebab, bentuk, dan dampak gerakan sosial, aksi protes, konflik politik, serta pengaruh kelompok penekan dan kelompok kepentingan.</p></div>
+            <div class="scope-item"><strong>05 / PARTISIPASI & PERILAKU POLITIK</strong><p>Aspek mikro berfokus pada individu, identitas, sikap, dan perilaku memilih; aspek makro mengkaji partai, stabilitas demokrasi, lembaga besar, dan politik global.</p></div>
+          </div>
+        </section>
+        <section class="quote-strip">
+          <span class="quote-mark">“</span>
+          <blockquote>Sosiologi politik mempelajari hubungan timbal balik antara struktur sosial dan proses politik.</blockquote>
+          <span class="quote-source">— MAURICE DUVERGER<br /><small>Pengantar Sosiologi Politik</small></span>
+        </section>
+        <section class="section-block" id="timeline" data-progress-section="timeline">
+          <div class="section-heading">
+            <div><p class="kicker">SEJARAH DAN PERKEMBANGAN SOSIOLOGI POLITIK</p><h2>Lintasan sejarah</h2></div>
+            <div class="timeline-tools">
+              <button class="filter-btn" id="filterBtn"><i data-lucide="sliders-horizontal"></i> Semua era</button>
+            </div>
+          </div>
+          <div class="era-tabs" role="tablist">
+            <button class="era-tab active" data-era="all">Semua</button><button class="era-tab" data-era="abad19">Abad ke-19</button><button class="era-tab" data-era="awalabad20">Awal abad ke-20</button><button class="era-tab" data-era="pertengahan">Pertengahan abad ke-20</button><button class="era-tab" data-era="akhirabad20">Akhir abad ke-20</button><button class="era-tab" data-era="kini">Masa kini</button>
+          </div>
+          <div class="timeline-list" id="timelineList">
+            <article class="timeline-item" data-era="abad19" data-search="abad 19 revolusi prancis revolusi industri monarki absolut feodalisme kapitalisme auguste comte karl marx">
+              <div class="timeline-year">ABAD KE-19</div><div class="timeline-node"><span></span></div>
+              <div class="timeline-card"><div class="card-tag">LAHIRNYA DISIPLIN</div><h3>Revolusi dan tatanan baru</h3><p>Revolusi Prancis meruntuhkan monarki absolut dan feodalisme. Revolusi Industri mengubah masyarakat agraris menjadi masyarakat industri dan melahirkan kapitalisme.</p><a href="#detail-abad19" class="text-link timeline-link" data-activate-era="abad19">Selengkapnya <i data-lucide="arrow-up-right"></i></a></div>
+            </article>
+            <article class="timeline-item" data-era="awalabad20" data-search="awal abad 20 max weber vilfredo pareto gaetano mosca legitimasi birokrasi stratifikasi teori elit">
+              <div class="timeline-year">AWAL ABAD KE-20</div><div class="timeline-node"><span></span></div>
+              <div class="timeline-card"><div class="card-tag">AKAR & PELETAK DASAR</div><h3>Legitimasi, birokrasi, dan elit</h3><p>Max Weber menghubungkan kekuasaan dengan legitimasi, birokrasi, dan stratifikasi sosial. Pareto dan Mosca merumuskan teori elit tentang kelompok minoritas yang memerintah.</p><a href="#detail-awalabad20" class="text-link timeline-link" data-activate-era="awalabad20">Selengkapnya <i data-lucide="arrow-up-right"></i></a></div>
+            </article>
+            <article class="timeline-item featured" data-era="pertengahan" data-search="pertengahan abad 20 perang dunia kedua perang dingin behavioralisme demokrasi totaliterisme lipset mills rostow">
+              <div class="timeline-year">PERTENGAHAN ABAD KE-20</div><div class="timeline-node"><span></span></div>
+              <div class="timeline-card"><div class="card-tag">KRISIS & PENDEKATAN EMPIRIS</div><h3>Demokrasi, totaliterisme, dan perilaku</h3><p>Pasca-Perang Dunia II dan Perang Dingin mendorong studi stabilitas politik. Behavioralisme mengukur perilaku individu dan kelompok lewat data empiris serta survei statistik.</p><a href="#detail-pertengahan" class="text-link timeline-link" data-activate-era="pertengahan">Selengkapnya <i data-lucide="arrow-up-right"></i></a></div></div>
+            </article>
+            <article class="timeline-item" data-era="akhirabad20" data-search="akhir abad 20 runtuh uni soviet 1989 globalisasi revolusi informasi charles tilly sidney tarrow foucault gerakan sosial baru">
+              <div class="timeline-year">AKHIR ABAD KE-20</div><div class="timeline-node"><span></span></div>
+              <div class="timeline-card"><div class="card-tag">PERGESERAN KEKUASAAN</div><h3>Globalisasi dan gerakan sosial baru</h3><p>Runtuhnya Uni Soviet, globalisasi, dan revolusi informasi mengubah studi negara dan demokrasi. Tilly, Tarrow, dan Foucault memperluas kajian pada protes, governmentality, dan isu identitas.</p><a href="#detail-akhirabad20" class="text-link timeline-link" data-activate-era="akhirabad20">Selengkapnya <i data-lucide="arrow-up-right"></i></a></div>
+            </article>
+            <article class="timeline-item" data-era="kini" data-search="masa kini era digital aktivisme hashtag kampanye data micro targeting polarisasi echo chamber buzzer bot hoaks disinformasi kebijakan publik">
+              <div class="timeline-year">MASA KINI</div><div class="timeline-node"><span></span></div>
+              <div class="timeline-card"><div class="card-tag">ERA DIGITAL</div><h3>Politik identitas dan media sosial</h3><p>Kajian masa kini membahas aktivisme digital, kampanye berbasis data, polarisasi echo chamber, serta buzzer, bot, dan disinformasi sebagai instrumen kekuasaan.</p><a href="#detail-kini" class="text-link timeline-link" data-activate-era="kini">Selengkapnya <i data-lucide="arrow-up-right"></i></a></div>
+            </article>
+          </div>
+          <p class="empty-state" id="emptyState">Tidak ada materi yang cocok dengan pencarianmu.</p>
+          <div class="era-detail" id="detail-abad19" data-detail="abad19">
+            <p class="kicker">MATERI MENDALAM / ABAD KE-19</p><h3>Mengapa sosiologi politik lahir?</h3>
+            <p>Sosiologi politik lahir ketika perubahan politik dan ekonomi tidak lagi dapat dijelaskan oleh tatanan lama. Revolusi Prancis mengguncang legitimasi monarki absolut dan feodalisme, sementara Revolusi Industri memindahkan pusat kehidupan dari desa agraris ke kota-kota industri.</p>
+            <div class="era-detail-grid"><div><strong>PERUBAHAN KEKUASAAN</strong><p>Muncul gagasan tentang warga negara, kedaulatan rakyat, dan dasar legitimasi pemerintahan.</p></div><div><strong>PERUBAHAN SOSIAL</strong><p>Kapitalisme membentuk kelas borjuis pemilik modal dan proletar yang menjual tenaga kerjanya.</p></div><div><strong>PELOPOR</strong><p>Auguste Comte mengusulkan “fisika sosial” yang positif dan empiris untuk membaca keteraturan serta perubahan sosial.</p></div><div><strong>KRITIK MARX</strong><p>Karl Marx melihat negara dan kekuasaan dalam kaitannya dengan konflik kelas dan kepentingan kaum borjuis.</p></div></div>
+          </div>
+          <div class="era-detail" id="detail-awalabad20" data-detail="awalabad20">
+            <p class="kicker">MATERI MENDALAM / AWAL ABAD KE-20</p><h3>Legitimasi dan siapa yang memerintah</h3>
+            <p>Pada awal abad ke-20, perhatian sosiologi politik bergeser dari asal-usul negara menuju cara kekuasaan dipertahankan dalam masyarakat modern.</p>
+            <div class="era-detail-grid"><div><strong>MAX WEBER</strong><p>Kekuasaan menjadi dominasi ketika memperoleh kepatuhan. Legitimasi, birokrasi, dan stratifikasi menjelaskan mengapa perintah dianggap sah.</p></div><div><strong>TEORI ELIT</strong><p>Vilfredo Pareto dan Gaetano Mosca menyatakan bahwa pemerintahan selalu cenderung dikuasai kelompok minoritas yang terorganisasi.</p></div><div><strong>PERTANYAAN KUNCI</strong><p>Siapa yang memiliki akses terhadap jabatan, sumber daya, dan keputusan politik?</p></div><div><strong>RELEVANSI</strong><p>Konsep ini membantu membaca birokrasi negara, pergantian elite, dan ketimpangan pengaruh politik.</p></div></div>
+          </div>
+          <div class="era-detail" id="detail-pertengahan" data-detail="pertengahan">
+            <p class="kicker">MATERI MENDALAM / PERTENGAHAN ABAD KE-20</p><h3>Krisis global dan lahirnya behavioralisme</h3>
+            <p>Perang Dunia II, rezim totaliter, dan Perang Dingin membuat ilmuwan sosial perlu menjelaskan stabilitas politik, demokrasi, serta ancaman terhadap kebebasan secara lebih terukur.</p>
+            <div class="era-detail-grid"><div><strong>PERGESERAN METODE</strong><p>Behavioralisme mengganti spekulasi filosofis dengan pengamatan perilaku, survei, data statistik, dan perbandingan empiris.</p></div><div><strong>SEYMOUR MARTIN LIPSET</strong><p>Political Man menghubungkan pembangunan ekonomi, struktur sosial, partisipasi politik, dan peluang demokrasi.</p></div><div><strong>C. WRIGHT MILLS</strong><p>The Power Elite membongkar konsentrasi keputusan di antara elite militer, korporasi, dan politik Amerika Serikat.</p></div><div><strong>TEORI MODERNISASI</strong><p>W. W. Rostow dan para pendukungnya menjelaskan transisi masyarakat tradisional menuju masyarakat industri modern.</p></div></div>
+          </div>
+          <div class="era-detail" id="detail-akhirabad20" data-detail="akhirabad20">
+            <p class="kicker">MATERI MENDALAM / AKHIR ABAD KE-20</p><h3>Negara, globalisasi, dan gerakan di luar jalur formal</h3>
+            <p>Runtuhnya Uni Soviet pada 1989 mengakhiri Perang Dingin dan mengubah fokus studi ke transisi demokrasi, kedaulatan, ketergantungan global, serta bentuk kekuasaan yang tidak selalu terlihat.</p>
+            <div class="era-detail-grid"><div><strong>POLITIK PERSAINGAN</strong><p>Charles Tilly dan Sidney Tarrow mengkaji protes, demonstrasi, dan gerakan sosial sebagai politik di luar institusi formal.</p></div><div><strong>FOUCAULT</strong><p>Konsep governmentality menunjukkan bahwa kekuasaan juga bekerja melalui norma, pengetahuan, pengawasan, dan cara orang mengatur dirinya sendiri.</p></div><div><strong>GERAKAN SOSIAL BARU</strong><p>Isu lingkungan, hak perempuan, dan identitas budaya melengkapi fokus lama pada konflik kelas.</p></div><div><strong>REVOLUSI INFORMASI</strong><p>Media massa dan teknologi mulai mengubah sirkulasi opini, koordinasi gerakan, serta partisipasi politik.</p></div></div>
+          </div>
+          <div class="era-detail" id="detail-kini" data-detail="kini">
+            <p class="kicker">MATERI MENDALAM / MASA KINI</p><h3>Kekuasaan dalam ekosistem digital</h3>
+            <p>Sosiologi politik masa kini membaca hubungan antara globalisasi, kewarganegaraan, kebijakan publik, krisis demokrasi, dan teknologi digital yang membentuk perilaku politik sehari-hari.</p>
+            <div class="era-detail-grid"><div><strong>AKTIVISME DIGITAL</strong><p>Hashtag activism dan aksi memviralkan ketidakadilan membuka ruang partisipasi serta tekanan baru terhadap pemerintah.</p></div><div><strong>KAMPANYE BERBASIS DATA</strong><p>Algoritma dan micro-targeting memetakan preferensi pemilih, termasuk melalui konten singkat di media sosial.</p></div><div><strong>POLARISASI</strong><p>Echo chamber mengisolasi pengguna dalam pandangan serupa sehingga segregasi dan konflik politik semakin tajam.</p></div><div><strong>MANIPULASI OPINI</strong><p>Buzzer, bot, hoaks, dan disinformasi menjadi instrumen untuk merebut atau mempertahankan legitimasi kekuasaan.</p></div></div>
+          </div>
+        </section>
+
+        <section class="lower-grid" id="tokoh" data-progress-section="tokoh">
+          <div class="section-heading compact"><div><p class="kicker">PETA PEMIKIR</p><h2>Tokoh kunci</h2></div><a href="#tokoh" class="view-all">Lihat semua <i data-lucide="arrow-up-right"></i></a></div>
+          <div class="thinker-grid">
+            <article class="thinker-card"><div class="thinker-portrait comte"></div><div><h3>Auguste Comte</h3><p>Sosiologi positif & empiris</p></div><span class="thinker-year">1798</span></article>
+            <article class="thinker-card"><div class="thinker-portrait marx"></div><div><h3>Karl Marx</h3><p>Konflik kelas & kapitalisme</p></div><span class="thinker-year">1818</span></article>
+            <article class="thinker-card"><div class="thinker-portrait weber"></div><div><h3>Max Weber</h3><p>Legitimasi & birokrasi</p></div><span class="thinker-year">1864</span></article>
+            <article class="thinker-card"><div class="thinker-portrait lipset"></div><div><h3>S. M. Lipset</h3><p>Demokrasi & pembangunan</p></div><span class="thinker-year">1922</span></article>
+            <article class="thinker-card"><div class="thinker-portrait mills"></div><div><h3>C. Wright Mills</h3><p>Konsentrasi elite kuasa</p></div><span class="thinker-year">1916</span></article>
+            <article class="thinker-card"><div class="thinker-portrait foucault"></div><div><h3>Michel Foucault</h3><p>Governmentality</p></div><span class="thinker-year">1926</span></article>
+          </div>
+        </section>
+
+        <section class="concept-section" id="penerapan" data-progress-section="penerapan"><div class="concept-label">PENERAPAN<br />SEMUA LINTASAN</div><div class="concept-content"><h2>Membaca penerapan<br /><em>dari waktu ke waktu.</em></h2><p>Setiap lintasan sejarah memberi alat untuk memahami persoalan sosial politik hingga hari ini. Perubahan legitimasi kekuasaan, politik, sosial, ekonomi, dan teknologi saling terhubung dalam kehidupan masyarakat.</p><div class="application-grid"><div class="application-point"><strong>ABAD KE-19</strong><span>Gunakan konflik kelas untuk melihat hubungan kapitalisme, kepemilikan modal, dan ketimpangan.</span></div><div class="application-point"><strong>AWAL ABAD KE-20</strong><span>Gunakan konsep legitimasi dan birokrasi untuk menilai mengapa institusi dipatuhi.</span></div><div class="application-point"><strong>PERTENGAHAN ABAD KE-20</strong><span>Gunakan data empiris untuk mengamati partisipasi, demokrasi, pembangunan, dan konsentrasi elite.</span></div><div class="application-point"><strong>AKHIR ABAD KE-20</strong><span>Gunakan teori gerakan sosial dan governmentality untuk membaca protes serta kuasa yang tidak kasatmata.</span></div><div class="application-point"><strong>MASA KINI</strong><span>Gunakan kajian politik digital untuk memahami aktivisme, polarisasi, micro-targeting, dan disinformasi.</span></div></div><a href="#timeline" class="dark-link">Kembali ke lintasan sejarah <i data-lucide="arrow-up-right"></i></a></div></section>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
